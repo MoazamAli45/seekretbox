@@ -1,5 +1,5 @@
 import Separator from "./shared/Separator";
-
+import human from "/human.webp";
 const list = [
   "Ha bárki a rendszeren keresztül szeretne kampányt indítani hozzátok irányítjuk.",
   "Partneri diszkontot biztosíttunk a  számotokra.",
@@ -234,6 +234,68 @@ const Marketing = () => {
           </div>
         </div>
       </div>
+      {/*   #3rd Section */}
+      <Separator />
+      <div className="flex flex-col-reverse lg:flex-row ">
+        <div className=" lg:w-[17%] bg-[#6E6E6E] hidden lg:flex justify-center items-center py-4">
+          <div className="relative main">
+            <div className="triangle"></div>
+
+            <div className="text-container">
+              <span className="text-white text-[17px]">Frontember</span>
+            </div>
+            <div className=" rounded-image-container flex flex-col items-center">
+              <img src={human} alt="human" className="rounded-image" />
+              <p className="text-white font-extralight poppins text-[14px] text-justify leading-6">
+                Kuczi Ákos <br /> cégvezető
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="lg:w-[66%] bg-[#4F386D]  py-8 px-6  lg:px-20">
+          <div className="flex flex-col items-center  gap-4 ">
+            <p className="text-white font-extralight poppins text-[14px] text-justify leading-6">
+              A bitwitch.io egy startup vállalkozás. Azonban átlag 14.742 éves
+              rendszerfejlesztői, integrátori, szoftverfejlesztői tapasztalattal
+              rendelkezünk.
+            </p>
+            <p className="text-white font-extralight poppins text-[14px] text-justify leading-6">
+              A marketing számunkra kiemelkedően érdekes terület volt
+              informatikai szempontból. Így 2022-ben elkezdtük megtervezni, majd
+              fejleszteni a seekretboxot. A cél az volt, hogy új módon
+              közelítsünk a marketinghez, és a vásárlói szokások elemzésével
+              értékes információkat állítsunk elő. A vásárlói szokások
+              elemzéséhez persze up-to-date adatokra van szükség. A
+              legaktuálisabb adatokat pedig a vásárlók kiterjesztett testrésze,
+              a telefonja tudja szolgáltatni. Ezért lett a seekretbox
+              végfelhasználói formája mobil alkalmazás.
+            </p>
+            <p className="text-white font-extralight poppins text-[14px] text-justify leading-6">
+              Több, a marketing terület szakmai szereplőivel folytatott
+              beszélgetés során, a seekretbox jelentős változásokon ment
+              keresztül az eredeti elképzeléshez képest. Új funkciók kerültek
+              beépítésre, és az iteráció közben persze néhányat ki is ejtettünk
+              belőle. A végleges formája pedig TA-DA-DAM, az lett amit
+              publikusan is elérhetővé teszünk az AppStore-on és Google Play-en.
+            </p>
+            <p className="text-white font-extralight poppins text-[14px] text-justify leading-6">
+              És még valami.
+              <br /> Azt fontos kiemelni, hogy a rendszer nem tárolja vagy
+              osztja meg a vásárlók személyes adatait. És arra sem biztosít
+              lehetőséget, hogy több adat kontextusából, a vásárlók
+              szempontjából új, és érzékeny adatokat állítson elő. Minden
+              előállított információ statisztikai jellegű, és deperszonalizált
+              adatokon alapul.
+            </p>
+          </div>
+        </div>
+        <div className="lg:w-[17%] bg-[#6E6E6E] flex justify-center items-center py-4">
+          <h1 className="text-[#E8E6E6] text-[24px] sm:text-[33px] px-5 lg:px-10 text-center">
+            Rólunk
+          </h1>
+        </div>
+      </div>
+      <Separator />
     </>
   );
 };

@@ -33,3 +33,51 @@
   background-repeat: no-repeat;
   height: 80vh;
 }
+
+.triangle {
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  background-color: #4f386d;
+  height: 150px;
+  width: 150px;
+}
+
+.main {
+  position: relative;
+  width: fit-content;
+  transform: translateY(100px);
+}
+
+.text-container {
+  position: absolute;
+  top: 30%;
+  left: 20px;
+  /* transform: translateY(-50%); */
+  transition: top 0.3s ease;
+}
+
+.rounded-image {
+  width: 150px; /* Set your desired width */
+  height: 150px; /* Set your desired height */
+  border-radius: 50%;
+}
+
+.rounded-image-container {
+  overflow: hidden;
+  /* position: absolute; */
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%) scale(0);
+  transition: transform 0.3s ease;
+}
+.main:hover .text-container {
+  top: -24%;
+  left: 40px;
+}
+
+.main:hover .triangle {
+  transform: scale(0);
+}
+
+.main:hover .rounded-image-container {
+  transform: translateY(-100%) scale(1);
+}

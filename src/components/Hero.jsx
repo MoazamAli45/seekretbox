@@ -53,6 +53,12 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      {/* Video Section
+      https://www.seekretbox.com/?wix-vod-video-id=87cec816e0cd4736a93ee3d2219e431c&wix-vod-comp-id=comp-ltz0xw5s
+      */}
+      <div className="w-full h-[10px] bg-white"></div>
+      <div className="w-full bg-image flex items-center justify-center"></div>
+      <div className="w-full h-[10px] bg-white"></div>
     </div>
   );
 };

@@ -24,3 +24,12 @@
 #hamburger-1.is-active .line:nth-child(3) {
   transform: translateY(-11px) rotate(-45deg);
 }
+
+.bg-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("./assets/images/bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}

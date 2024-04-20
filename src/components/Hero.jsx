@@ -77,7 +77,6 @@ const Hero = () => {
             </span>
           </span>
         </div>
-        <div className="w-full h-[10px] bg-white"></div>
       </div>
       {/*   Next Section */}
 

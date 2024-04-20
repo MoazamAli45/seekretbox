@@ -40,3 +40,7 @@ body {
 .poppins {
   font-family: "Poppins", sans-serif;
 }
+
+ul {
+  list-style-type: disc;
+}

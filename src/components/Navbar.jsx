@@ -29,7 +29,7 @@ const Navbar = () => {
           </div>
           {/*  right navbar */}
           <div className="hidden md:flex justify-between gap-[120px] items-center self-end">
-            <div className="flex justify-evenly gap-7 items-center">
+            <div className="flex justify-evenly gap-7 items-center self-end">
               <a href="#" className="text-[#6E6E6E] font-normal text-[16px]">
                 Home
               </a>

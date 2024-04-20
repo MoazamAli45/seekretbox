@@ -7,6 +7,7 @@ export default {
         "btn-primary": "#4F255B",
         primary: "#4F386D",
         secondary: "#6E6E6E",
+        "text-primary": "#DBDBDB",
       },
     },
   },

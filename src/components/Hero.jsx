@@ -79,6 +79,9 @@ const Hero = () => {
         </div>
         <div className="w-full h-[10px] bg-white"></div>
       </div>
+      {/*   Next Section */}
+
+      {/*  Modal */}
       {modal && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50">
           <div

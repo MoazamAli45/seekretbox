@@ -1,4 +1,5 @@
 import "./App.css";
+import Agenda from "./components/Agenda";
 import Hero from "./components/Hero";
 import Marketing from "./components/Marketing";
 import Navbar from "./components/Navbar";
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Hero />
       <Marketing />
+      <Agenda />
     </>
   );
 }

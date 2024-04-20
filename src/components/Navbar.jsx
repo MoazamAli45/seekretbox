@@ -19,7 +19,8 @@ const Navbar = () => {
           "top-0",
           "transition-all",
           "duration-300",
-          "ease-in-out"
+          "ease-in-out",
+          "z-10"
         );
       } else {
         headerRef.current?.classList.remove(
@@ -87,7 +88,7 @@ const Navbar = () => {
           </div>
           {/*   Humberger  Icon */}
           <div
-            className="hamburger md:hidden z-20"
+            className="hamburger md:hidden z-30"
             id="hamburger-1"
             ref={toggleRef}
             onClick={toggleHandler}
@@ -109,7 +110,7 @@ const Navbar = () => {
       <div className="w-screen h-[5px] bg-[#C7C7C7]"></div>
       {/*  Mobile Navbar */}
       <nav
-        className="md:hidden flex flex-col  h-screen py-[100px] px-8  w-screen bg-white items-start z-10  transition duration-700 ease-in-out
+        className="md:hidden flex flex-col  h-screen py-[100px] px-8  w-screen bg-white items-start z-20  transition duration-700 ease-in-out
          fixed  opacity-0 top-0 left-0 
         "
         ref={navRef}

@@ -1,14 +1,46 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 const Navbar = () => {
   const toggleRef = useRef();
   const navRef = useRef();
+
+  const headerRef = useRef();
+
   const toggleHandler = () => {
-    toggleRef.current.classList.toggle("is-active");
-    navRef.current.classList.toggle("opacity-100");
+    toggleRef.current.classList?.toggle("is-active");
+    navRef.current.classList?.toggle("opacity-100");
   };
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 10) {
+        headerRef.current?.classList.add(
+          "fixed",
+          "top-0",
+          "transition-all",
+          "duration-300",
+          "ease-in-out"
+        );
+      } else {
+        headerRef.current?.classList.remove(
+          "fixed",
+          "top-0",
+          "transition-all",
+          "duration-300",
+          "ease-in-out"
+        );
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav>
+    <nav ref={headerRef}>
       <div className="w-screen  h-[5px] bg-black"></div>
       <div className="w-screen px-6 bg-white pt-4 pb-3 ">
         <div className="flex items-center justify-between">

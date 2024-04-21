@@ -22,13 +22,13 @@ const Marketing = () => {
     <>
       <div className="flex flex-col-reverse lg:flex-row " id="seekretbox">
         <div className="lg:w-[80%] bg-[#4F386D] flex flex-col items-center py-3 gap-3">
-          <div className="bg-[#4F255B] px-8 py-2 hidden lg:block w-[80%] text-center">
+          <div className="bg-[#4F255B] px-8 py-2 hidden lg:block max-w-[750px] w-[750px] text-center">
             <h4 className="text-text-primary text-[26px]">
               Nekik mi ezt mondanánk
             </h4>
           </div>
           <div className="flex flex-col gap-3 justify-start px-1 lg:px-[130px]">
-            <div className="flex flex-col lg:flex-row  gap-3 ">
+            <div className="flex flex-col lg:flex-row  lg:max-w-[750px] lg:w-[750px]  gap-3 ">
               <div className="bg-[#324158] py-8 px-5 lg:w-1/2  hover:rotate-3 transition-all duration-300">
                 <div className="flex flex-col gap-3 items-center lg:items-start">
                   <h5 className="text-white text-[20px] font-extralight lg:text-start text-center text-center poppins">
@@ -56,9 +56,9 @@ const Marketing = () => {
                 </div>
               </div>
 
-              <div className="bg-[#4D5135] py-5 px-3 lg:w-1/2  hover:rotate-3 transition-all duration-300">
+              <div className="bg-[#4D5135] py-5 px-3 lg:w-[350px] lg:max-w-[350px]  hover:rotate-3 transition-all duration-300">
                 <div className="flex flex-col gap-3 items-center lg:items-start">
-                  <h5 className="text-white text-[20px] font-extralight lg:text-start text-center text-center poppins">
+                  <h5 className="text-white text-[20px] font-extralight lg:text-start  text-center poppins">
                     A hírdető
                   </h5>
 
@@ -123,7 +123,7 @@ const Marketing = () => {
           </h1>
         </div>
         <div className="lg:w-[80%] bg-[#4F386D]  py-3 px-8  lg:px-[120px]">
-          <div className="flex flex-col items-center  gap-4 ">
+          <div className="flex flex-col items-center  gap-4  lg:max-w-[750px] lg:w-[750px] lg:mx-auto ">
             <span className=" self-end border-b-[1px] border-solid border-white pb-3 w-full lg:w-1/4">
               <h4 className="text-[#CCCCCC] text-[26px] text-right">
                 Csak őszintén
@@ -253,7 +253,7 @@ const Marketing = () => {
           </div>
         </div>
         <div className="lg:w-[66%] bg-[#4F386D]  py-8 px-6  lg:px-20">
-          <div className="flex flex-col items-center  gap-4 ">
+          <div className="flex flex-col items-center  gap-4  lg:max-w-[700px] lg:w-[700px] lg:mx-auto ">
             <p className="text-white font-extralight poppins text-[14px] text-justify leading-6">
               A bitwitch.io egy startup vállalkozás. Azonban átlag 14.742 éves
               rendszerfejlesztői, integrátori, szoftverfejlesztői tapasztalattal

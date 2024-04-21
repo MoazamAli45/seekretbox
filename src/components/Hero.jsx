@@ -16,7 +16,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col" id="home">
         <div className="flex flex-col lg:flex-row">
           <div className="w-full lg:w-[35%] bg-secondary px-6 py-6 sm:px-10 sm:py-14 ">
             <div className="flex flex-col gap-[6px] items-center">

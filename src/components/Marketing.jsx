@@ -20,7 +20,7 @@ const list3 = [
 const Marketing = () => {
   return (
     <>
-      <div className="flex flex-col-reverse lg:flex-row ">
+      <div className="flex flex-col-reverse lg:flex-row " id="seekretbox">
         <div className="lg:w-[80%] bg-[#4F386D] flex flex-col items-center py-3 gap-3">
           <div className="bg-[#4F255B] px-8 py-2 hidden lg:block w-[80%] text-center">
             <h4 className="text-text-primary text-[26px]">

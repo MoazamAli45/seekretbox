@@ -3,7 +3,7 @@ import Separator from "./shared/Separator";
 const Contact = () => {
   return (
     <>
-      <div className="flex flex-col-reverse lg:flex-row ">
+      <div className="flex flex-col-reverse lg:flex-row " id="contact">
         <div className="lg:w-[65%] bg-[#6E6E6E] h-screen flex justify-center items-center py-8 px-8">
           {/*     <------------------------------------------CONTACT FORM COME HERE -------------------------------> */}
         </div>

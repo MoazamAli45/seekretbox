@@ -1,12 +1,19 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const toggleRef = useRef();
   const navRef = useRef();
 
+  const [showPartnerOnMobile, setShowPartnerOnMobile] = useState(false);
+
   const [isMobile, setIsMobile] = useState(false);
 
   const headerRef = useRef();
+
+  const partnerToggleHandler = () => {
+    setShowPartnerOnMobile(!showPartnerOnMobile);
+  };
 
   const toggleHandler = () => {
     toggleRef.current.classList?.toggle("is-active");
@@ -72,21 +79,42 @@ const Navbar = () => {
           {/*  right navbar */}
           <div className="hidden md:flex justify-between gap-[120px] items-center self-end">
             <div className="flex justify-evenly gap-7 items-center self-end">
-              <a href="#" className="text-[#6E6E6E] font-normal text-[16px]">
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className="text-[#6E6E6E] font-normal text-[16px] group relative"
+              >
                 Home
-              </a>
-              <a
-                href="#"
+                <a
+                  href="https://www.seekretbox.com/partner-connect"
+                  className="absolute -bottom-[50px] right-0 w-[140px]  px-1 py-1 bg-white text-[16px] group-hover:block hidden  text-[#6E6E6E]"
+                >
+                  Partner kapcsolat
+                </a>
+              </Link>
+              <Link
+                to="seekretbox"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
                 className="text-black  transition-colors hover:text-[#6E6E6E] font-normal text-[16px]"
               >
                 Seekretbox
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
                 className=" text-black  transition-colors hover:text-[#6E6E6E] font-normal text-[16px]"
               >
                 Kapcsolat
-              </a>
+              </Link>
             </div>
             <a
               href="#"
@@ -125,21 +153,50 @@ const Navbar = () => {
         ref={navRef}
       >
         <div className="flex flex-col justify-evenly gap-7 items-start">
-          <a href="#" className="text-[#6E6E6E] font-normal text-[20px]">
+          <Link
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            onClick={() => {
+              toggleHandler();
+              partnerToggleHandler();
+            }}
+            className="text-[#6E6E6E] font-normal text-[20px]"
+          >
             Home
-          </a>
-          <a
-            href="#"
+          </Link>
+          {showPartnerOnMobile && (
+            <a
+              href="https://www.seekretbox.com/partner-connect"
+              className="text-black font-bold pl-3 text-[20px]"
+            >
+              Partner kapcsolat
+            </a>
+          )}
+          <Link
+            to="seekretbox"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={toggleHandler}
             className="text-black  transition-colors hover:text-[#6E6E6E] font-normal text-[20px]"
           >
             Seekretbox
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={toggleHandler}
             className=" text-black  transition-colors hover:text-[#6E6E6E] font-normal text-[20px]"
           >
             Kapcsolat
-          </a>
+          </Link>
         </div>
       </nav>
     </nav>

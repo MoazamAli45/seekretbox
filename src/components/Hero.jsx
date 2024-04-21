@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoClose, IoPlayCircleOutline } from "react-icons/io5";
+import video from "../assets/videos/video.mp4";
 const lists = [
   "Kampányelemzés",
   "Re-marketing",
@@ -92,7 +93,7 @@ const Hero = () => {
             <IoClose className="text-white text-3xl cursor-pointer" />
           </div>
           <div className="relative">
-            <iframe
+            {/* <iframe
               width="800"
               height="450"
               src=" https://www.seekretbox.com/?wix-vod-video-id=87cec816e0cd4736a93ee3d2219e431c&wix-vod-comp-id=comp-ltz0xw5s"
@@ -100,7 +101,11 @@ const Hero = () => {
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
-            ></iframe>
+            ></iframe> */}
+
+            <video controls className="max-w-full sm:max-w-[600px] h-[400px]">
+              <source src={video} type="video/mp4" />
+            </video>
           </div>
         </div>
       )}

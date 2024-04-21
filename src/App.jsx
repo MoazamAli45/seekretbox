@@ -1,6 +1,7 @@
 import "./App.css";
 import Agenda from "./components/Agenda";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Marketing from "./components/Marketing";
 import Navbar from "./components/Navbar";
@@ -13,6 +14,7 @@ function App() {
       <Marketing />
       <Agenda />
       <Contact />
+      <Footer />
     </>
   );
 }

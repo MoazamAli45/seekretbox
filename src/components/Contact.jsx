@@ -1,4 +1,3 @@
-import React from "react";
 import Separator from "./shared/Separator";
 
 const Contact = () => {
@@ -13,7 +12,7 @@ const Contact = () => {
           <span className="text-[#E8E6E6] text-[20px]">Küldj üzenetet!</span>
         </div>
       </div>
-      <Separator styles={"lg:block hidden"} />
+      <Separator />
     </>
   );
 };

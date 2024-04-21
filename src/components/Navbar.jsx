@@ -1,8 +1,10 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
   const toggleRef = useRef();
   const navRef = useRef();
+
+  const [isMobile, setIsMobile] = useState(false);
 
   const headerRef = useRef();
 
@@ -11,9 +13,16 @@ const Navbar = () => {
     navRef.current.classList?.toggle("opacity-100");
   };
   useEffect(() => {
+    const isMobileDevice = window.innerWidth < 768;
+
+    if (isMobileDevice) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
     const handleScroll = () => {
       const offset = window.scrollY;
-      if (offset > 10) {
+      if (offset > 10 && !isMobile) {
         headerRef.current?.classList.add(
           "fixed",
           "top-0",

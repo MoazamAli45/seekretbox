@@ -67,14 +67,14 @@ const Navbar = () => {
               alt="logo"
               className="w-[30px] h-[30px] md:w-[50px] md:h-[50px]"
             />
-            <div className="flex flex-col ">
+            <a href="/" className="flex flex-col ">
               <span className="text-[#4F255B] text-[26px]  font-medium ">
                 seekretbox
               </span>
               <span className="text-[#4F386D]  text-[14px] -mt-[2px] font-medium  proxima-font">
                 Ott lenni mindenhol.
               </span>
-            </div>
+            </a>
           </div>
           {/*  right navbar */}
           <div className="hidden md:flex justify-between gap-[120px] items-center self-end">
@@ -85,7 +85,9 @@ const Navbar = () => {
                 smooth={true}
                 offset={-100}
                 duration={500}
-                className="text-[#6E6E6E] font-normal text-[16px] group relative"
+                className="text-[#6E6E6E] font-normal text-[16px] group relative
+                cursor-pointer
+                "
               >
                 Home
                 <a
@@ -101,7 +103,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-100}
                 duration={500}
-                className="text-black  transition-colors hover:text-[#6E6E6E] font-normal text-[16px]"
+                className="text-black  transition-colors hover:text-[#6E6E6E]      cursor-pointer font-normal text-[16px]"
               >
                 Seekretbox
               </Link>
@@ -111,14 +113,14 @@ const Navbar = () => {
                 smooth={true}
                 offset={-100}
                 duration={500}
-                className=" text-black  transition-colors hover:text-[#6E6E6E] font-normal text-[16px]"
+                className=" text-black  transition-colors hover:text-[#6E6E6E]      cursor-pointer font-normal text-[16px]"
               >
                 Kapcsolat
               </Link>
             </div>
             <a
-              href="#"
-              className="bg-btn-primary  transition  px-5 py-2 rounded-md self-start text-white font-semibold"
+              href="https://partners.seekretbox.com/"
+              className="bg-btn-primary  transition  px-5 py-2 rounded-md self-start text-white font-semibold hover:bg-black hover:text-yellow-500"
             >
               Partnerfelület
             </a>

@@ -204,7 +204,7 @@ const Marketing = () => {
                   Mindenkinek az az érdeke, hogy megismerjék a rendszert. -
                   Szemérmességből most nem írom ide, hogy ez
                 </li>
-                <li className="text-white font-extralight poppins text-[14px] text-justify leading-6 flex items-center gap-4 px-6">
+                <li className="text-white font-extralight poppins text-[14px] text-justify leading-6 flex items-center gap-4 lg:px-6">
                   miért fontos, esetleg anyagiasnak is tűnnék -, de erre
                   mindkettőnknek vagyis mindhármunknak törekednünk kell. Ezért
                   ebben várjuk a Ti aktív részvételeteket is.

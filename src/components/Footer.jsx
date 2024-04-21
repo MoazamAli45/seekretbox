@@ -58,20 +58,20 @@ const Footer = () => {
               Jogi nyilatkozatok
             </span>
             <a
-              href="#"
-              className="text-white text-[16px] lg:w-auto w-1/3 underline mt-2"
+              href="https://s3.eu-west-1.amazonaws.com/webcontent0001-eu-west-1.qponio.com/law/Felhaszna%CC%81la%CC%81si+felte%CC%81telek_bitwitch.pdf"
+              className="text-white text-[16px] lg:w-auto w-1/3 underline lg:mt-2"
             >
               Felhasználási feltételek
             </a>
             <a
-              href="#"
+              href="https://s3.eu-west-1.amazonaws.com/webcontent0001-eu-west-1.qponio.com/law/Adatkezele%CC%81si+ta%CC%81je%CC%81koztato%CC%81_bitwitch.pdf"
               className="text-white text-[16px] lg:w-auto w-1/3 underline"
             >
               Adatkezelési tájékoztató
             </a>
             <a
               className="text-white text-[16px] underline lg:w-auto w-1/3"
-              href="#"
+              href="https://s3.eu-west-1.amazonaws.com/webcontent0001-eu-west-1.qponio.com/law/A%CC%81SZF_bitwitch.pdf"
             >
               ASZF
             </a>
